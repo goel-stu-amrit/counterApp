@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size:80px;
+}
+
+.count-container{
+  margin-top: 100px;
+}
+.count-container span{
+  background-color: white;
+  padding: 32px 60px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.count-container .minus{
+  background-color: white;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  border-right: 2px solid black;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  align-items: center;
+  padding:30px 50px;
+}
+.count-container .plus{
+  background-color: white;
+  border: none;
+  font-size: 60px;
+  cursor: pointer;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-left: 2px solid black;
+  padding:30px 50px;
+}
+
+.reset{
+  background-color: red;
+  color: white;
+  margin-top: 60px;
+  font-size: 40px;
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: none;
+  transition: scale 0.3s ease-in-out;
+}
+.reset:hover{
+  transform: scale(1.1);
+}
+
+/* Smartphones (≤ 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 11vw;
+  }
+
+  .count-container{
+    margin-top: 35px;
+  }
+
+  .count-container .minus,
+  .count-container .plus,
+  .count-container span {
+    padding: 10px 20px;
+    font-size: 8vw;
+  }
+
+  .reset {
+    font-size: 6vw;
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
+}
+
+/* Tablets (601px - 900px) */
+@media (min-width: 601px) and (max-width: 1200px) {
+  h1 {
+    font-size: 8vw;
+  }
+  .count-container{
+    margin-top: 45px;
+  }
+
+  .count-container .minus,
+  .count-container .plus,
+  .count-container span {
+    padding: 15px 25px;
+    font-size: 5vw;
+  }
+
+  .reset {
+    font-size: 4vw;
+    padding: 12px 28px;
+    margin-top: 40px;
+  }
+}
+
