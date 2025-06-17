@@ -21,9 +21,11 @@ class App extends React.Component{
       <div className='App'>
         <h1>Increment / Decrement Counter</h1>
         <div className='count-container'>
-          <button className='minus' onClick={this.minusOne}>-</button>
-          <span className='count'>{count}</span>
-          <button className='plus' onClick= {this.plusOne}>+</button>
+          <div className = 'button-wrapper'>
+            <button className='minus' onClick={this.minusOne}>-</button>
+            <span className='count'>{count}</span>
+            <button className='plus' onClick= {this.plusOne}>+</button>
+          </div>
         </div>
         <button className='reset' onClick={this.resetToZer0}>Reset</button>
       </div>
